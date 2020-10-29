@@ -7,13 +7,12 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-serde = { version = "1.0.104", features = ["derive"] }
+url = "2.1.1"
+reqwest = "0.10.8"
+openssl = "0.10.30"
+dns-lookup = "1.0.5"
 serde_json = "1.0.48"
 error-chain = "0.12.4"
-dns-lookup = "1.0.5"
-openssl = "0.10.30"
 openssl-sys = "0.9.58"
-hyper = "0.13"
-hyper-tls = "0.4.3"
-url = "2.1.1"
 tokio = { version = "0.2", features = ["full"] }
+serde = { version = "1.0.104", features = ["derive"] }
