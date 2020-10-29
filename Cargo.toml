@@ -8,11 +8,13 @@ edition = "2018"
 
 [dependencies]
 url = "2.1.1"
-reqwest = "0.10.8"
+log = "0.4.11"
 openssl = "0.10.30"
+env_logger = "0.8.1"
 dns-lookup = "1.0.5"
 serde_json = "1.0.48"
 error-chain = "0.12.4"
 openssl-sys = "0.9.58"
 tokio = { version = "0.2", features = ["full"] }
 serde = { version = "1.0.104", features = ["derive"] }
+reqwest = { version = "0.10.8", features = ["gzip", "brotli"] }
