@@ -7,7 +7,7 @@ extern crate dotenv_codegen;
 mod ssl_expire;
 
 use dotenv::dotenv;
-use log::{error, info};
+use log::error;
 use serde::{Deserialize, Serialize};
 use ssl_expire::SslExpiration;
 use std::fs;
@@ -48,7 +48,7 @@ async fn send_alert(
         .await;
 
     match res {
-        Ok(res) => info!("return status : {}", res.status()),
+        Ok(res) => println!("archibot: return status : {}", res.status()),
         Err(x) => {
             error!("calling error : {}", x);
         }
